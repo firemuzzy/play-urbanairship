@@ -35,8 +35,8 @@ Then call
 
     urbanAirshipApi
 
-    the 'urbanAirshipApi' command will return BubbleFoundry's UrbanAirship object that you will to to call out to the API
-    Unfortunately I do not have time to write out a detailed doc of BubbleFoundry's UrbanAirship object, you will have to read the code.
+the 'urbanAirshipApi' command will return BubbleFoundry's UrbanAirship object that you will to to call out to the API
+Unfortunately I do not have time to write out a detailed doc of BubbleFoundry's UrbanAirship object, you will have to read the code.
 
 
 ## Push Example
