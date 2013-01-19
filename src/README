@@ -1,0 +1,17 @@
+# UrbanAirship plugin for Play Framework 2
+
+The plugin's wraps the bubblefoundry's scala UrbanAirship api 
+
+ * https://github.com/bubblefoundry/BFUrbanAirship
+
+### Installation
+Start by adding the plugin, in your `project/Build.scala`
+
+    val appDependencies = Seq(
+      "com.bottlecub" %% "play-urban-airship" % "1.0.0"
+    )
+
+Then register the plugin, this is done by creating(or appending) to the `conf/play.plugins` file
+
+    500:com.bottlecub.plugin.urbanairship.UrbanAirshipPlugin
+
