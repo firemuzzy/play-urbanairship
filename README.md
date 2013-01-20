@@ -7,10 +7,18 @@ The plugin's wraps bubblefoundry's UrbanAirship library so it can be used in the
 
 ## Installation
 
-Start by adding the plugin, in your `project/Build.scala`
+Start by adding the plugin as a dependency, in your `project/Build.scala`
 
     val appDependencies = Seq(
-      "need to host this somewhere"
+      "play-urbanairship" % "play-urbanairship_2.9.1" % "1.0-SNAPSHOT"
+    )
+
+Then add the repository into your play project resolvers (it is hosted on github taking advantage of github pages)
+
+    val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
+      ....
+      resolvers += Resolver.url("FireMuzzy GitHub Play Repository", url("http://firemuzzy.github.com/releases/"))(Resolver.ivyStylePatterns),
+      ....
     )
 
 We now register the plugin, this is done by creating(or appending) to the `conf/play.plugins` file ('500:' determines the order of priority of how the plugins are loaded)
